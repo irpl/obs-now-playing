@@ -26,7 +26,7 @@ export default function SpotifyNowPlaying() {
   useEffect(() => {
     // Connect to WebSocket server
     // Replace 'ws://your-websocket-server-url' with your actual WebSocket server URL
-    const ws = new WebSocket(`ws://${window.location.host}`)
+    const ws = new WebSocket(`wss://${window.location.host}`)
     wsRef.current = ws
 
     ws.onopen = () => {
