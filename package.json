@@ -1,0 +1,13 @@
+{
+  "name": "obs-now-playing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd .. && cd server && npm install",
+    "start": "node server/index.js",
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && node index.js\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
